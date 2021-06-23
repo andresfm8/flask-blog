@@ -3,3 +3,5 @@ __pycache__
 *.pyc
 .env
 firebase-key.json
+flask.sqlite
+python3-virtualenv
