@@ -4,7 +4,6 @@ certifi==2021.5.30
 cffi==1.14.5
 chardet==4.0.0
 click==8.0.1
-dataclasses==0.8
 firebase-admin==5.0.0
 Flask==2.0.1
 google-api-core==1.30.0
