@@ -5,3 +5,4 @@ __pycache__
 firebase-key.json
 flask.sqlite
 python3-virtualenv
+nginx-certbot.env
