@@ -2,8 +2,6 @@ version: "3"
 services:
   web:
     build: .
-    ports:
-      - "80:80"
     restart: always
     env_file:
       - .env
@@ -17,6 +15,7 @@ services:
     restart: always
     env_file:
       - .env
+
   nginx:
     image: jonasal/nginx-certbot:latest
     restart: unless-stopped
