@@ -29,4 +29,7 @@ services:
       - ./user_conf.d:/etc/nginx/user_conf.d
     depends_on:
       - web
-    
+
+
+volumes:
+  nginx_secrets:   
