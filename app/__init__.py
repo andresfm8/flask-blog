@@ -3,9 +3,7 @@ from flask import (
     Flask,
     make_response,
     request,
-    redirect,
     render_template,
-    send_from_directory,
 )
 from dotenv import load_dotenv
 
@@ -14,7 +12,6 @@ from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
-from flask.typing import StatusCode
 from werkzeug.security import check_password_hash, generate_password_hash
 
 load_dotenv()
