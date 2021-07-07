@@ -31,4 +31,4 @@ jobs:
           flake8: true
           flake8_args:
             - "--max-line-length=100"
-            - "--ignore=W291"
+            - "--ignore=W291 ../../migrations/"
