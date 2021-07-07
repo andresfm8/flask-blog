@@ -7,8 +7,6 @@ from flask import (
 )
 from dotenv import load_dotenv
 
-# from firebase_admin import credentials, firestore, initialize_app
-from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
