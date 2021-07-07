@@ -169,7 +169,7 @@ header::after {
     clear: both;
 }
 
-.icon {
+.icon, .nav-button {
     float: right;
     margin: 10px;
     padding: 5px;
@@ -217,13 +217,25 @@ nav a:hover::before {
     width: 100%;
 }
 
- @media screen and (max-width: 600px) {
-    .nav-content >div > a:not(:first-child) {display: none;}
-    .nav-content > div > a.icon {
-      float: right;
-      display: block;
-    }
-  }
+.nav-button {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0.7rem 2.5rem;
+    text-decoration: none;
+    border: none;
+    appearance: none;
+    user-select: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 116, 217);
+}
+
+@media screen and (max-width: 600px) {
+.nav-content >div > a:not(:first-child) {display: none;}
+.nav-content > div > a.icon {
+    float: right;
+    display: block;
+}
+}
   
 /*  @media screen and (max-width: 600px) {
     .nav-bar.nav-content {position: relative;}

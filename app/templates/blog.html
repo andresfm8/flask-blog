@@ -5,15 +5,13 @@
   {% include "navbar.html" %}
 
   <div class="content">
-    <button 
-    onclick="window.location.href='{{url}}add-blog-post'"
-      class="main-button add-post-button"
-    >
+    <button onclick="window.location.href='add-blog-post'" class="main-button add-post-button">
       New Post
     </button>
     <h2 class="section-title">Blog Posts</h2>
     <div class="posts-container">
-      {% for post in posts %}
+      <a>Blog posts go here</a>
+      <!-- {% for post in posts %}
         <div class="post-head">
           <p class="post-title">{{post.title}}</p>
           <p class="post-date">{{post.date.month}} - {{post.date.year}}</p>
@@ -21,8 +19,9 @@
         <div class="post-body">
           <p>{{post.content}}</p>
         </div>
-      {% endfor %}
+      {% endfor %} -->
     </div>
   </div>
 </body>
+
 </html>
