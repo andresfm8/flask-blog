@@ -39,8 +39,8 @@ jobs:
       
       - name: Check out Git repository
         uses: actions/checkout@v2
-        
+
       - name: Endpoint Test
         run: |
-          chmod x prod-test.sh
+          chmod +x prod-test.sh
           ./prod-test.sh
