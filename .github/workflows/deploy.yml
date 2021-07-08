@@ -35,6 +35,7 @@ jobs:
         run: ssh my-vm 'cd ${{ secrets.PROJECT_ROOT }} && docker-compose ps'
       
       - name: Discord Notifications
+        run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d 
         actions:
           - action: "Deployment successful"
             type: "DISCORD"
