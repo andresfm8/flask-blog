@@ -36,5 +36,4 @@ jobs:
       
       - name: Discord Notifications
         run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d 
-        "content= Deployment Success"
-        "embeds= Success!"
+        "content= Deployment Success, embeds= Success!"
