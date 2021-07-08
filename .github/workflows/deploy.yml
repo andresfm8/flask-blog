@@ -38,6 +38,7 @@ jobs:
         run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content= Deployment successful!"
       
       - name: Endpoint Test
-        run: | 
-          chmod +x $PROJECT_ROOT/prod-test.sh
+        run: |
+          cd $PROJECT_ROOT
+          chmod +x prod-test.sh
           ./prod-test.sh
