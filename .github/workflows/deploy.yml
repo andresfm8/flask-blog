@@ -47,4 +47,4 @@ jobs:
       
       - name: Endpoint Test Failure
         if: ${{ failure() }}
-        run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content= Deployment Failure :("
+        run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content= Testing Failure Failure :("
