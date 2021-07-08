@@ -37,6 +37,9 @@ jobs:
       - name: Discord Notifications
         run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content= Deployment successful!"
       
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+        
       - name: Endpoint Test
         run: |
           chmod x prod-test.sh
