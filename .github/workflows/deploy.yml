@@ -40,5 +40,5 @@ jobs:
       - name: Endpoint Test
         run: |
           cd $PROJECT_ROOT
-          chmod +x prod-test.sh
+          chmod +x ./prod-test.sh
           ./prod-test.sh
