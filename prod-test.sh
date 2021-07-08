@@ -39,4 +39,4 @@ else
   echo "Test 5 - /register is OK"
 fi
 
-exit 0
+exit 1
