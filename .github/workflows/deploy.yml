@@ -28,8 +28,11 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_IP: ${{ secrets.SSH_IP }}
 
-      - name: Deploy site
-        run: ssh my-vm 'cd ${{ secrets.PROJECT_ROOT }} && git fetch && git reset --hard origin/master && docker-compose down && docker-compose up -d --build'
+      - name: Update Code
+        run: ssh my-vm 'cd ${{ secrets.PROJECT_ROOT }} && git fetch && git reset --hard origin/master'
+
+      - name: Deploy Site
+        run: ssh my-vm 'cd ${{ secrets.PROJECT_ROOT }} && docker-compose down && docker-compose up -d --build'
 
       - name: Container Status
         run: ssh my-vm 'cd ${{ secrets.PROJECT_ROOT }} && docker-compose ps'
